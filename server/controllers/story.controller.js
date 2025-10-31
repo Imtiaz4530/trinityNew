@@ -74,8 +74,14 @@
 
 // module.exports = { createStory, addStory, getAllStories };
 
-const dummyRoute = (req, res) => {
-    res.status(200).json({ message: 'Dummy route is working!' });
+const dummyRoute = async (req, res) => {
+    try {
+        const stories = await Story.find();
+        res.status(200).json(stories);
+    } catch (e) {
+        console.log(e);
+        res.status(500).json({ message: 'Server Error' });
+    }
 }
 
 module.exports = { dummyRoute };
