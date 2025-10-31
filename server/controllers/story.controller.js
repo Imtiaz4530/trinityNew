@@ -1,4 +1,4 @@
-const Story = require('../models/Story.model.js');
+const Story = require('../models/Story.model');
 
 const createStory = async (req, res) => {
     const { title, content, link } = req.body;
