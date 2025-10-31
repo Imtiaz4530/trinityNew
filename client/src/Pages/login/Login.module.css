@@ -1,0 +1,99 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f0f10;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.4s ease;
+}
+
+.card {
+  background: #1c1c1f;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 400px;
+  color: #f1f1f1;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+.formGroup input {
+  background: #2a2a2d;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border: 1px solid #00aaff;
+}
+
+.btn {
+  background: linear-gradient(135deg, #0078ff, #00d4ff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.footerText {
+  text-align: center;
+  margin-top: 1rem;
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+.footerText a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footerText a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1.5rem;
+  }
+}
